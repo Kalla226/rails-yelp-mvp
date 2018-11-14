@@ -1,0 +1,13 @@
+<div class="container">
+
+  <h1>Terrible Restaurants</h1>
+
+  <ul>
+    <% @restaurants.each do |restaurant| %>
+    <li>
+      <%= link_to restaurant.name, restaurant%>
+      <%= restaurant.address %>
+    </li>
+    <% end %>
+  </ul>
+</div>
